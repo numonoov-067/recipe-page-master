@@ -1,0 +1,40 @@
+@import url(./fonts.css);
+
+/* CUSTOM PROPS */
+:root {
+    --Dark-Charcoal: #312E2C;
+    --Wenge-Brown: #5F564D;
+    --Dark-Raspberry: #7A284E;
+    --Brandy-Red: #854632;
+    --Eggshell: #F3E5D7;
+    --Outfit: "Outfit";
+    --YoungSerif: "YoungSerif";
+}
+
+/* GLOBAL STYLES */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--Outfit);
+    background-color: var(--Eggshell);
+    font-size: 16px;
+}
+
+
+
+
