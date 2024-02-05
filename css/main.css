@@ -1,4 +1,5 @@
 @import url(./fonts.css);
+
 :root {
   --Dark-Charcoal: #312e2c;
   --Wenge-Brown: #5f564d;
@@ -10,6 +11,7 @@
   --Outfit: "Outfit";
   --YoungSerif: "YoungSerif";
 }
+
 *,
 *::after,
 *::before {
@@ -17,12 +19,15 @@
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
   font-family: var(--Outfit);
   background-color: var(--Eggshell);
@@ -30,6 +35,7 @@ body {
   padding-top: 123px;
   padding-bottom: 123px;
 }
+
 .cards {
   max-width: 736px;
   width: 100%;
@@ -41,24 +47,29 @@ body {
   flex-direction: column;
   row-gap: 40px;
 }
+
 .card-image {
   width: 100%;
   height: 300px;
 }
+
 .card-image__photo {
   border-radius: 12px;
   object-fit: cover;
 }
+
 .cards-body {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
+
 .cards-recipe {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
+
 .cards-recipe__headline {
   font-family: var(--YoungSerif);
   font-size: 40px;
@@ -66,6 +77,7 @@ body {
   line-height: 40px;
   color: var(--Dark-Charcoal);
 }
+
 .cards-recipe__desc {
   font-family: var(--Outfit);
   font-size: 16px;
@@ -73,6 +85,7 @@ body {
   line-height: 24px;
   color: var(--Wenge-Brown);
 }
+
 .preparation-time {
   background-color: var(--Snow);
   padding: 28px;
@@ -81,6 +94,7 @@ body {
   flex-direction: column;
   row-gap: 16px;
 }
+
 .preparation-time__title {
   color: var(--Dark-Raspberry);
   font-family: var(--Outfit);
@@ -88,22 +102,26 @@ body {
   font-weight: 600;
   line-height: 100%;
 }
+
 .preparation-time__list {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
 }
+
 .preparation-time__item {
   display: flex;
   align-items: center;
   column-gap: 28px;
 }
+
 .preparation-time__text {
   color: var(--Wenge-Brown);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
+
 .preparation-time__span {
   font-weight: 700;
 }
@@ -116,6 +134,7 @@ body {
   margin-bottom: 24px;
   font-family: var(--YoungSerif);
 }
+
 .ingredients-li {
   display: flex;
   align-items: center;
@@ -123,14 +142,17 @@ body {
   gap: 16px;
   padding-top: 8px;
 }
+
 hr {
   transform: translateY(32px);
   color: #e3ddd7;
 }
+
 .ingrediens-li-part {
   display: flex;
   column-gap: 16px;
 }
+
 .ingrediens-p {
   color: var(--Brandy-Red);
   font-family: var(--Outfit);
@@ -138,27 +160,33 @@ hr {
   font-weight: 700;
   line-height: 24px;
 }
+
 .ingrediens-text {
-  color: var(--Dark-Charcoal);
+  color: gray;
+  font-family: var(--Outfit);
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  column-gap: 10px;
+
 }
-hr  {
-  margin-bottom: 24px;
+
+hr {
+  margin-bottom: 8px;
 }
+
 .ingrediens-part__title {
-  padding-top: 32px;
+  padding-top: 24px;
   padding-bottom: 24px;
   color: var(--Brandy-Red);
   font-family: var(--YoungSerif);
 }
+
 .nutrition-title {
   color: var(--Brandy-Red);
   font-family: var(--YoungSerif);
   padding-bottom: 24px;
 }
+
 .nutrition-text {
   font-family: var(--Outfit);
   font-size: 16px;
@@ -167,6 +195,7 @@ hr  {
   line-height: 24px;
   padding-bottom: 24px;
 }
+
 .ul-part {
   display: flex;
   padding-left: 32px;
@@ -177,6 +206,59 @@ hr  {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; 
+  line-height: 24px;
 }
 
+.ingrediens-text {
+  font-weight: 100;
+}
+
+.ingrediens-text span {
+  color: var(--Wenge-Brown);
+  font-weight: 800;
+}
+
+.nurtrition-part1-ul {
+  color: var(--Brandy-Red);
+  font-family: var(--Outfit);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.nutrition__parts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.nutrition_info {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.nutrition-desc {
+  width: 288px;
+  color: var(--Wenge-Brown);
+  font-family: var(--Outfit);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+
+.nutrition__line {
+  width: 100%;
+  height: 1px;
+  background: #E3DDD7;
+}
+
+.nutrition-amount {
+  color: var(--Brandy-Red);
+  font-family: var(--Outfit);
+  font-weight: 600;
+}
