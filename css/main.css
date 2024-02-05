@@ -1,40 +1,182 @@
 @import url(./fonts.css);
-
-/* CUSTOM PROPS */
 :root {
-    --Dark-Charcoal: #312E2C;
-    --Wenge-Brown: #5F564D;
-    --Dark-Raspberry: #7A284E;
-    --Brandy-Red: #854632;
-    --Eggshell: #F3E5D7;
-    --Outfit: "Outfit";
-    --YoungSerif: "YoungSerif";
+  --Dark-Charcoal: #312e2c;
+  --Wenge-Brown: #5f564d;
+  --Dark-Raspberry: #7a284e;
+  --Brandy-Red: #854632;
+  --Eggshell: #f3e5d7;
+  --White: #fff;
+  --Snow: #fff7fb;
+  --Outfit: "Outfit";
+  --YoungSerif: "YoungSerif";
 }
-
-/* GLOBAL STYLES */
-
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 ul {
-    list-style: none;
+  list-style: none;
 }
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 body {
-    font-family: var(--Outfit);
-    background-color: var(--Eggshell);
-    font-size: 16px;
+  font-family: var(--Outfit);
+  background-color: var(--Eggshell);
+  font-size: 16px;
+  padding-top: 123px;
+  padding-bottom: 123px;
+}
+.cards {
+  max-width: 736px;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--White);
+  margin: auto;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.card-image {
+  width: 100%;
+  height: 300px;
+}
+.card-image__photo {
+  border-radius: 12px;
+  object-fit: cover;
+}
+.cards-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.cards-recipe {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.cards-recipe__headline {
+  font-family: var(--YoungSerif);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--Dark-Charcoal);
+}
+.cards-recipe__desc {
+  font-family: var(--Outfit);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--Wenge-Brown);
+}
+.preparation-time {
+  background-color: var(--Snow);
+  padding: 28px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.preparation-time__title {
+  color: var(--Dark-Raspberry);
+  font-family: var(--Outfit);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.preparation-time__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.preparation-time__item {
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
+.preparation-time__text {
+  color: var(--Wenge-Brown);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.preparation-time__span {
+  font-weight: 700;
 }
 
+/* preparation-time */
+/* ingredients STIE START */
 
-
+.ingredients__title {
+  color: var(--Brandy-Red);
+  margin-bottom: 24px;
+  font-family: var(--YoungSerif);
+}
+.ingredients-li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  padding-top: 8px;
+}
+hr {
+  transform: translateY(32px);
+  color: #e3ddd7;
+}
+.ingrediens-li-part {
+  display: flex;
+  column-gap: 16px;
+}
+.ingrediens-p {
+  color: var(--Brandy-Red);
+  font-family: var(--Outfit);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.ingrediens-text {
+  color: var(--Dark-Charcoal);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  column-gap: 10px;
+}
+hr  {
+  margin-bottom: 24px;
+}
+.ingrediens-part__title {
+  padding-top: 32px;
+  padding-bottom: 24px;
+  color: var(--Brandy-Red);
+  font-family: var(--YoungSerif);
+}
+.nutrition-title {
+  color: var(--Brandy-Red);
+  font-family: var(--YoungSerif);
+  padding-bottom: 24px;
+}
+.nutrition-text {
+  font-family: var(--Outfit);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 24px;
+}
+.ul-part {
+  display: flex;
+  padding-left: 32px;
+  column-gap: 240px;
+  row-gap: 24px;
+  color: var(--Wenge-Brown, #5f564d);
+  font-family: var(--Outfit);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+}
 
